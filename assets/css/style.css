@@ -49,11 +49,3 @@ dialog h4{font-family:var(--serif);font-size:1.1rem;margin:22px 0 4px}dialog ul{
 @media(max-width:760px){.herogrid,.contactgrid{grid-template-columns:1fr}.photo{order:-1;max-width:180px}.menu{display:block}
 nav{display:none;position:absolute;top:58px;left:0;right:0;flex-direction:column;align-items:flex-start;background:var(--bg);padding:16px 4%;border-bottom:1px solid var(--line)}nav.open{display:flex}.stats{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
-
-/* Tagline marquee: edit speed with the 28s value. Pauses on hover; static when reduced motion is on. */
-.marquee{overflow:hidden;max-width:100%;border-block:1px solid var(--line);margin:8px 0 16px;padding:6px 0}
-.marquee .track{display:flex;width:max-content;max-width:none;margin:0;white-space:nowrap;animation:marq 28s linear infinite}
-.marquee .track span{padding-right:3rem}
-.marquee:hover .track{animation-play-state:paused}
-@keyframes marq{to{transform:translateX(-50%)}}
-@media(prefers-reduced-motion:reduce){.marquee .track{animation:none;width:auto;white-space:normal}.marquee .track span+span{display:none}}
