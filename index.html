@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ewaen Erhahon | Business Analyst</title>
+<meta name="description" content="Portfolio of Ewaen Erhahon, Business Analyst: requirements, process mapping, gap analysis and Power BI reporting.">
+<meta name="author" content="Ewaen Erhahon">
+<meta name="theme-color" content="#0f5f6b">
+<meta property="og:title" content="Ewaen Erhahon | Business Analyst">
+<meta property="og:description" content="Turning business needs into clear requirements and practical solutions.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/images/profile.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav"><div class="wrap navin">
+  <a class="brand" href="#home" data-bind="name">Ewaen Erhahon</a>
+  <button class="menu" aria-expanded="false" aria-controls="links" aria-label="Menu">Menu</button>
+  <nav id="links" aria-label="Main"><a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+  <a class="btn sm" data-href="resume" download>CV</a><button class="theme" aria-label="Switch theme">Theme</button></nav>
+</div></header>
+<main id="main">
+<section id="home" class="hero"><div class="wrap herogrid">
+  <div><p class="muted" data-bind="location"></p>
+  <h1 data-bind="name"></h1>
+  <p class="role" data-bind="title"></p>
+  <p class="tag" data-bind="tagline"></p>
+  <p class="lead" data-bind="bio"></p>
+  <p class="actions"><a class="btn" href="#projects">View projects</a><a class="btn ghost" data-href="resume" download>Download CV</a><a class="btn ghost" data-href="linkedin" target="_blank" rel="noopener">LinkedIn</a><a class="btn ghost" data-href="github" target="_blank" rel="noopener">GitHub</a></p></div>
+  <img class="photo" src="assets/images/profile.jpg" alt="Portrait of Ewaen Erhahon" width="300" height="300">
+</div><div class="wrap stats" id="stats"></div></section>
+<section id="about" class="wrap sec"><h2>About</h2><div id="aboutText" class="prose"></div></section>
+<section id="experience" class="wrap sec"><h2>Experience</h2><ol class="timeline" id="timeline"></ol><h3>Education</h3><ul id="edu"></ul></section>
+<section id="skills" class="wrap sec"><h2>Core competencies</h2><div class="skillgrid" id="skillgrid"></div></section>
+<section id="projects" class="wrap sec"><h2>Projects</h2><p class="muted">Training and capstone case studies. Benefits described are proposed unless stated.</p><div class="cards" id="cards"></div></section>
+<section id="contact" class="wrap sec"><h2>Contact</h2><div class="contactgrid">
+  <div><p>Open to Business Analyst opportunities.</p><p><a data-mail></a></p><p data-bind="phone"></p><p data-bind="location"></p></div>
+  <form id="form" method="POST" novalidate>
+    <label for="n">Name</label><input id="n" name="name" required autocomplete="name">
+    <label for="e">Email</label><input id="e" name="email" type="email" required autocomplete="email">
+    <label for="s">Subject</label><input id="s" name="subject" required>
+    <label for="m">Message</label><textarea id="m" name="message" rows="5" required></textarea>
+    <button class="btn" type="submit">Send message</button><p id="status" role="status" aria-live="polite"></p>
+  </form></div></section>
+</main>
+<footer class="wrap foot"><span data-bind="name"></span> · <span id="yr"></span></footer>
+<dialog id="cs" aria-labelledby="cst"><button class="close" aria-label="Close">Close</button><article id="csbody"></article></dialog>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/script.js"></script>
+</body></html>
