@@ -1,0 +1,59 @@
+/* COLOURS: edit the variables below. FONTS: edit --serif and --sans. */
+:root{--bg:#f7f8f9;--card:#fff;--ink:#14212b;--muted:#5a6b78;--line:#dde3e8;--accent:#0f5f6b;--accent-ink:#fff;--serif:Georgia,"Times New Roman",serif;--sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+:root[data-theme=dark]{--bg:#10171d;--card:#17212a;--ink:#e8eef2;--muted:#9fb0bc;--line:#26343f;--accent:#5cc0cc;--accent-ink:#0b1a1e}
+@media(prefers-color-scheme:dark){:root:not([data-theme]){--bg:#10171d;--card:#17212a;--ink:#e8eef2;--muted:#9fb0bc;--line:#26343f;--accent:#5cc0cc;--accent-ink:#0b1a1e}}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 var(--sans);overflow-x:hidden}
+h1,h2,h3{font-family:var(--serif);line-height:1.2;font-weight:600}
+a{color:var(--accent)}img{max-width:100%;height:auto}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.wrap{width:min(1080px,92%);margin:auto}.muted{color:var(--muted)}
+.skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:var(--card);padding:8px;z-index:9}
+.nav{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.navin{display:flex;align-items:center;justify-content:space-between;min-height:58px;gap:12px}
+.brand{font-family:var(--serif);font-weight:600;color:var(--ink);text-decoration:none}
+nav{display:flex;align-items:center;gap:18px}nav a:not(.btn){color:var(--muted);text-decoration:none}nav a:not(.btn):hover{color:var(--ink)}
+.menu{display:none}
+.btn,.menu,.theme,.close{font:inherit;cursor:pointer}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);padding:10px 18px;border-radius:6px;border:1px solid var(--accent);text-decoration:none;margin:0 10px 10px 0;transition:transform .15s}
+.btn:hover{transform:translateY(-1px)}.btn.ghost{background:none;color:var(--accent)}.btn.sm{padding:4px 12px;margin:0}
+.theme,.menu,.close{background:none;border:1px solid var(--line);border-radius:6px;color:var(--ink);padding:4px 10px}
+.hero{padding:64px 0 24px}.herogrid{display:grid;grid-template-columns:1fr 280px;gap:48px;align-items:center}
+h1{font-size:clamp(2.4rem,6vw,4rem);margin:.1em 0}.role{font-size:1.15rem;font-weight:600}.tag{font-family:var(--serif);font-size:1.4rem;max-width:30ch}.lead{max-width:60ch;color:var(--muted)}
+.photo{width:100%;max-width:280px;aspect-ratio:1;border-radius:50%;object-fit:cover;border:1px solid var(--line)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px;border-top:1px solid var(--line);padding-top:20px}
+.stats b{display:block;font-family:var(--serif);font-size:1.6rem}.stats span{color:var(--muted);font-size:.9rem}
+.sec{padding:56px 0;border-top:1px solid var(--line)}h2{font-size:2rem;margin:0 0 24px}
+.prose{max-width:68ch}
+.timeline{list-style:none;padding:0 0 0 22px;margin:0 0 32px;border-left:2px solid var(--line)}
+.timeline li{position:relative;margin-bottom:32px}.timeline li::before{content:"";position:absolute;left:-29px;top:8px;width:12px;height:12px;border-radius:50%;background:var(--accent)}
+.timeline h3{margin:0;font-size:1.2rem}.timeline ul{padding-left:18px}
+.skillgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.skillgrid div,.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:20px}
+.skillgrid h3{margin:0 0 10px;font-size:1.1rem}.chips{display:flex;flex-wrap:wrap;gap:6px;padding:0;margin:0;list-style:none}
+.chips li{border:1px solid var(--line);border-radius:4px;padding:2px 9px;font-size:.88rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.card{padding:0;overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.08)}
+.card img,.ph{width:100%;aspect-ratio:3/2;object-fit:cover;background:var(--line);display:block}
+.ph{display:grid;place-items:center;color:var(--muted);font-family:var(--serif);padding:16px;text-align:center}
+.card div:not(.ph){padding:18px;display:flex;flex-direction:column;gap:8px;flex:1}.card h3{margin:0;font-size:1.15rem}.card p{margin:0}.card .btn{margin-top:auto;align-self:flex-start}
+.contactgrid{display:grid;grid-template-columns:1fr 1.3fr;gap:40px}
+form label{display:block;font-weight:600;margin-top:14px}
+input,textarea{width:100%;font:inherit;padding:10px;border:1px solid var(--muted);border-radius:6px;background:var(--card);color:var(--ink)}
+#status{margin-top:12px}.foot{padding:32px 0;color:var(--muted);border-top:1px solid var(--line)}
+dialog{width:min(780px,94%);max-height:90vh;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:28px}
+dialog::backdrop{background:rgba(0,0,0,.55)}.close{float:right}
+dialog h4{font-family:var(--serif);font-size:1.1rem;margin:22px 0 4px}dialog ul{margin:0;padding-left:18px}
+.reveal{opacity:0;transform:translateY(10px);transition:opacity .5s,transform .5s}.reveal.in{opacity:1;transform:none}
+@media(max-width:760px){.herogrid,.contactgrid{grid-template-columns:1fr}.photo{order:-1;max-width:180px}.menu{display:block}
+nav{display:none;position:absolute;top:58px;left:0;right:0;flex-direction:column;align-items:flex-start;background:var(--bg);padding:16px 4%;border-bottom:1px solid var(--line)}nav.open{display:flex}.stats{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+
+/* Tagline marquee: edit speed with the 28s value. Pauses on hover; static when reduced motion is on. */
+.marquee{overflow:hidden;max-width:100%;border-block:1px solid var(--line);margin:8px 0 16px;padding:6px 0}
+.marquee .track{display:flex;width:max-content;max-width:none;margin:0;white-space:nowrap;animation:marq 28s linear infinite}
+.marquee .track span{padding-right:3rem}
+.marquee:hover .track{animation-play-state:paused}
+@keyframes marq{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.marquee .track{animation:none;width:auto;white-space:normal}.marquee .track span+span{display:none}}
