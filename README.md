@@ -14,7 +14,7 @@ Plain HTML, CSS and JavaScript. No npm, Node, React or build step.
 Almost everything lives in `assets/js/data.js`: name, title, bio, About text, skills, experience, education, projects (including case-study text), CV path, contact details, LinkedIn, GitHub and the Formspree endpoint. Edit only the text between quotes.
 
 - **Images:** put files in `assets/images/` and set the project's `image` path in data.js. Redwood Insurance has no image yet: add `project-03.jpg` and set `image: "assets/images/project-03.jpg"`.
-- **CV:** replace `assets/documents/Ewaen_Erhahon_Business_Analyst_CV.pdf` (or change the `resume` path).
+- **CV:** replace `assets/documents/Ewaen_Erhahon_CV_Nov2026.pdf` (or change the `resume` path).
 - **Add a project:** copy one project block in data.js and change the text.
 - **Colours:** variables at the top of `assets/css/style.css`.
 - **Fonts:** `--serif` and `--sans` in the same place.
